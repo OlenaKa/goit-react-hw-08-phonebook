@@ -14,4 +14,5 @@ const getFilteredContacts = createSelector(
   }
 )
 
+// eslint-disable-next-line
 export default { getContacts, getFilter, getFilteredContacts, getloading }

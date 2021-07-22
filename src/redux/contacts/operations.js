@@ -31,5 +31,5 @@ const deleteContact = (id) => (dispatch) => {
     .catch((error) => dispatch(actions.deleteContactError(error)))
 }
 
-
+// eslint-disable-next-line
 export default { addContact, deleteContact, fetchContacts }

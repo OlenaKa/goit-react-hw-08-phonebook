@@ -22,7 +22,6 @@ class LoginView extends Component {
 
   render() {
     const { email, password } = this.state
-    console.log(this.props.isAuthenticated)
     return (
       <div>
         <h1>Login page</h1>

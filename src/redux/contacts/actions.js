@@ -24,6 +24,7 @@ const deleteContactError = createAction("contacts/deleteContactError")
 // const deleteContact = createAction("contacts/delete")
 const filterContacts = createAction("contacts/filter")
 
+// eslint-disable-next-line
 export default {
   addContactRequest,
   addContactSuccess,

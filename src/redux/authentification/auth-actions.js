@@ -15,6 +15,7 @@ const getCurrentUserRequest = createAction("users/getCurrentUserRequest")
 const getCurrentUserSuccess = createAction("users/getCurrentUserSuccess")
 const getCurrentUserError = createAction("users/getCurrentUserError")
 
+// eslint-disable-next-line
 export default {
   addUserRequest,
   addUserSuccess,

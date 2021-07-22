@@ -51,7 +51,6 @@ const getCurrentUser = () => (dispatch, getState) => {
   const {
     user: { token: persistedToken },
   } = getState()
-  console.log(persistedToken)
 
   if (!persistedToken) {
     return
@@ -68,4 +67,5 @@ const getCurrentUser = () => (dispatch, getState) => {
     .catch((error) => dispatch(actions.getCurrentUserError(error.message)))
 }
 
+// eslint-disable-next-line
 export default { addUser, login, logout, getCurrentUser }

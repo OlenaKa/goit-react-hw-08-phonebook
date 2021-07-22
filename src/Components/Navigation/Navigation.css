@@ -1,0 +1,13 @@
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.NavLink {
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.NavLink_active {
+  color: rgb(15, 161, 71);
+}

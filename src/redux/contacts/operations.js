@@ -3,7 +3,20 @@ import actions from "./actions"
 
 axios.defaults.baseURL = "https://connections-api.herokuapp.com"
 
-const fetchContacts = () => (dispatch) => {
+const token = {
+  set(token) {
+    axios.defaults.headers.common.Authorization = `Bearer ${token}`
+  },
+  unset() {
+    axios.defaults.headers.common.Authorization = ""
+  },
+}
+
+const fetchContacts = () => (dispatch, getState) => {
+  const {
+    user: { token: persistedToken },
+  } = getState()
+  token.set(persistedToken)
   dispatch(actions.fetchContactsRequest())
   axios
     .get("/contacts")

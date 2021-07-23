@@ -4,7 +4,6 @@ import { selectors } from "../../redux/authentification"
 import { authOperations } from "../../redux/authentification"
 
 const UserMenu = ({ user, logout }) => {
-  console.log(user)
   return (
     <div className="user-menu-container">
       <p>Wellcome, {user.name}!</p>
